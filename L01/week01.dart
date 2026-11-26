@@ -16,8 +16,8 @@
 
 void main() {
   print('--- ข้อ 1 ---');
-  print(bmi(60, 1.70).toStringAsFixed(2)); // ควรได้ 20.76
-  print(bmi(82, 1.78).toStringAsFixed(2)); // ควรได้ 25.88
+  print(bmi(60, 1.70)); // ควรได้ 20.76
+  print(bmi(82, 1.78)); // ควรได้ 25.88
 
   print('--- ข้อ 2 ---');
   final scores = [82, 91, 75, 68, 95, 88];
@@ -33,7 +33,9 @@ void main() {
   print(nicknameLength('Mint')); // ควรได้ 4
 
   print('--- ข้อ 5 (Stretch) ---');
-  print(topThreeExpensive(products)); // ควรได้ [แล็ปท็อป, จอมอนิเตอร์, คีย์บอร์ด]
+  print(
+    topThreeExpensive(products),
+  ); // ควรได้ [แล็ปท็อป, จอมอนิเตอร์, คีย์บอร์ด]
 }
 
 // ------------------------------------------------------------
@@ -43,10 +45,9 @@ void main() {
 // ให้คืนค่าเป็น String ที่ตัดทศนิยมเหลือ 2 ตำแหน่ง
 // ใบ้: ตัวเลขทศนิยมใช้ double, ตัดทศนิยมใช้ .toStringAsFixed(2)
 // ------------------------------------------------------------
-double bmi(double weight, double height) {
-  //double sumHeight = height * height;
-
-  return weight / (height*height);
+String bmi(double weight, double height) {
+  final total = weight / (height * height);
+  return total.toStringAsFixed(2);
 }
 
 // ------------------------------------------------------------
@@ -60,18 +61,16 @@ double bmi(double weight, double height) {
 //      เช่น list.reduce((a, b) => a > b ? a : b)
 // ------------------------------------------------------------
 String average(List<int> numbers) {
-  // TODO
-  return '';
+  final sum = numbers.fold(0, (total, n) => total + n);
+  return (sum / numbers.length).toStringAsFixed(2);
 }
 
 int highest(List<int> numbers) {
-  // TODO
-  return 0;
+  return numbers.reduce((a, b) => a > b ? a : b);
 }
 
 int lowest(List<int> numbers) {
-  // TODO
-  return 0;
+  return numbers.reduce((a, b) => a < b ? a : b);
 }
 
 // ------------------------------------------------------------
