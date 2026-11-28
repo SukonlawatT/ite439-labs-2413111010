@@ -49,3 +49,4 @@
 - repo ต้องเป็น **Public** อาจารย์จึงเปิดดูได้
 - commit บ่อยๆ อย่างน้อย 3 ครั้งต่อ Lab ข้อความต้องบอกว่าทำอะไร (`update` หรือ `final` ไม่นับ) อาจารย์ดู commit history ตอนตรวจ
 - ห้าม commit รหัสผ่าน token หรือ API key ลงใน repo
+
