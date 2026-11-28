@@ -4,5 +4,5 @@ String greet(String name, int age) {
 
 void main() {
   print(greet('Sukonlwat', 20));
-  print(greet('NVDA', 50));
+  print(greet('AMAZON', 50));
 }

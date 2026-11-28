@@ -1,6 +1,6 @@
 void main() {
   // where
-  final score = [82, 91, 75, 68]; //list<int>
+  final score = [82, 91, 75, 68]; //list <int>
   final passed = score.where((s) => s > 80).toList(); //[82,91]
 
   print(passed);

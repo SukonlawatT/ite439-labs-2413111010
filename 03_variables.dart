@@ -1,5 +1,5 @@
 void main() {
-  var city = 'Bangkok';
+  var city = 'ยโสธร';
   city = 'Chiang Mai';
   final now = DateTime.now();
   const vat = 0.07;

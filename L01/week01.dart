@@ -61,8 +61,8 @@ String bmi(double weight, double height) {
 //      เช่น list.reduce((a, b) => a > b ? a : b)
 // ------------------------------------------------------------
 String average(List<int> numbers) {
-  final sum = numbers.fold(0, (total, n) => total + n);
-  return (sum / numbers.length).toStringAsFixed(2);
+  final total = numbers.fold(0, (total, n) => total + n);
+  return (total / numbers.length).toStringAsFixed(2);
 }
 
 int highest(List<int> numbers) {
