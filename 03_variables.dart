@@ -1,4 +1,4 @@
-void main(){
+void main() {
   var city = 'Bangkok';
   city = 'Chiang Mai';
   final now = DateTime.now();

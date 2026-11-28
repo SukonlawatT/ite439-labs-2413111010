@@ -1,6 +1,6 @@
-void main(){
-  final score = [82,91,75,68]; //List<int>
-  final student = {'id':'ite301','name':'Somchai'}; //Map<String,String
+void main() {
+  final score = [82, 91, 75, 68]; //List<int>
+  final student = {'id': 'ite301', 'name': 'Somchai'}; //Map<String,String
 
   print(score[0]); // 82
   print(score.length); // 4
